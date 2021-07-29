@@ -1,0 +1,22 @@
+body {
+  background-color: rgba(255, 127, 39, 0.95);
+  padding: 1em;
+}
+
+.mainLevel {
+  background-color: white;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.mainLevel .squareContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+/*# sourceMappingURL=level.css.map */

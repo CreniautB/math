@@ -1,0 +1,27 @@
+
+$greenColor: rgba(17, 209, 69, 0.95);
+$trueGreen : rgba(27, 179, 159, 1);
+$greenLessColor : rgba(27, 179, 159, 0.1);
+$orange : rgba(255, 127, 39, 0.95);
+$yellow : rgba(255,202,24, 1);
+
+body{
+    background-color: $orange;
+    padding: 1em;
+}
+
+.mainLevel{
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+    
+
+    .squareContainer{
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+}
+
