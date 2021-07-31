@@ -18,5 +18,27 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.time {
+  letter-spacing: 3px;
+}
+
+.time span {
+  letter-spacing: 1px;
+}
+
+.calcul {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 1em;
+}
+
+.time {
+  margin-top: 1em;
+  font-size: 20px;
 }
 /*# sourceMappingURL=level.css.map */

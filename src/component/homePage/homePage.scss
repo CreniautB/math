@@ -14,4 +14,30 @@ body{
     background-color: white;
     border-radius: 15px;
     padding: 1em;
+    text-align: center;
+}
+
+button {
+    list-style: none;
+    background-color: $greenColor;
+    padding: 10px;
+    border-radius: 5px;
+    color: White;
+    text-transform: capitalize;
+    margin: 0.4em;
+    box-shadow: 0px 0px 0.95px 0.95px $greenColor;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.levelSelection{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header {
+    h1 {
+        font-size: 25px;
+    }
 }
