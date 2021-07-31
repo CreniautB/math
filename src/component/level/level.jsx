@@ -10,18 +10,8 @@ function Level({level, chrono}) {
    
     const [tour, setTour] = useState(0)
     const [note, setNote] = useState(0)
-
-    console.log(note)
     
     let actualList = sendList(level)
-
-    function randomList(actualList){
-        for(var i =actualList.length-1 ; i>0 ;i--){
-            var j = Math.floor( Math.random() * (i + 1) ); //random index
-            [actualList[i],actualList[j]]=[actualList[j],actualList[i]]; // swap
-        }
-    }
-    randomList(actualList);
    
     function getAnswer(num, e) {
         let question =  Number(actualList[tour][1])
@@ -54,24 +44,24 @@ function Level({level, chrono}) {
             ))}
             </div>
             <button className="time">
-            <span>Il vous reste </span>
-            <Timer
-                    initialTime={chrono}
-                    direction="backward"
-                    checkpoints={[
-                        {
-                            time: 0,
-                            callback: () => setTour(109)
-                        }
-                    ]}
-                >
-                    {() => (
-                        <React.Fragment>
-                            <Timer.Minutes/>: 
-                            <Timer.Seconds/>
-                        </React.Fragment>
-                    )}
-                </Timer>
+                <span>Il vous reste </span>
+                <Timer
+                        initialTime={chrono}
+                        direction="backward"
+                        checkpoints={[
+                            {
+                                time: 0,
+                                callback: () => setTour(109)
+                            }
+                        ]}
+                    >
+                        {() => (
+                            <React.Fragment>
+                                <Timer.Minutes/>: 
+                                <Timer.Seconds/>
+                            </React.Fragment>
+                        )}
+                    </Timer>
             </button>
         </div>
     

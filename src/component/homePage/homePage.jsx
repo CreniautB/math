@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import _ from "lodash";
 import './homePage.css'
 import Level from '../level/level';
 
@@ -28,10 +27,11 @@ function HomePage()  {
                 <h1>
                     Choix du chrono
                 </h1>
-                <button onClick={() => selectChrono(20000)} >7 minutes</button>
+                <button onClick={() => selectChrono(420000)} >7 minutes</button>
                 <button onClick={() => selectChrono(600000)} >10 minutes</button>
                 <button onClick={() => selectChrono(900000)} >15 minutes</button>
                 <button onClick={() => selectChrono(1200000)} >20 minutes</button>
+                <button onClick={() => selectChrono(2100000)} >35 minutes</button>
             </div>
         )
     }
