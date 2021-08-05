@@ -1136,7 +1136,7 @@
           if (level ===4) {return list4}
           if (level ===5) {return list5}
           if (level ===6) {return list6}
-          if (level ===7) {return list1}
+          if (level ===7) {return list7}
           if (level ===8) {return list8}
           if (level ===9) {return list9}
           if (level ===10) {return list10}

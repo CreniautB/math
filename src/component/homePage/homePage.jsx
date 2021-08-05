@@ -39,7 +39,7 @@ function HomePage()  {
     return ( 
         <div>
             <div className="header">
-                <h1>Calcul Mental <br />Troix niveaux disponibles</h1>
+                <h1>Calcul Mental <br />Trois niveaux disponibles</h1>
             </div>
 
             <div className="levelSelection">
